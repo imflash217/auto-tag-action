@@ -6,8 +6,8 @@ set -o pipefail
 default_semvar_bump=${DEFAULT_BUMP:-minor}
 default_branch=${DEFAULT_BRANCH:-$GITHUB_BASE_REF} # get the default branch from github runner env vars
 with_v=${WITH_V:-false}
-release_branches=${RELEASE_BRANCHES:-master,main}
-custom_tag=${CUSTOM_TAG:-}
+release_branches=${RELEASE_BRANCHES:-main,dev,master}
+custom_tag=${CUSTOM_TAG:-boom}
 source=${SOURCE:-.}
 dryrun=${DRY_RUN:-false}
 initial_version=${INITIAL_VERSION:-0.0.0}
